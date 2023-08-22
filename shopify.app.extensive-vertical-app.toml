@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "extensive-vertical-app"
+client_id = "4a642c6f62e044b59456bbbbf66336a4"
+application_url = "https://nylon-millions-str-representatives.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://nylon-millions-str-representatives.trycloudflare.com/auth/callback",
+  "https://nylon-millions-str-representatives.trycloudflare.com/auth/shopify/callback",
+  "https://nylon-millions-str-representatives.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "hongsonstore.myshopify.com"
